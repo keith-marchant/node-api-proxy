@@ -31,7 +31,7 @@ const fetchWeather = async (city) => {
 const addWeatherToDOM = (data) => {
   weatherDisplay.innerHTML = `
     <h1>Weather in ${data.city}</h1>
-    <h2>${data.temp} &deg;F</h2>
+    <h2>${data.temp} &deg;C</h2>
   `
   cityInput.value = ''
 }
@@ -53,4 +53,4 @@ weatherForm.addEventListener('submit', (e) => {
 })
 
 // Initial fetch
-fetchWeather('Miami')
+fetchWeather('Sydney')
